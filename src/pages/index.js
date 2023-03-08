@@ -166,13 +166,18 @@ export default function Home() {
         setActionDelete={(action) => setActionDelete(action)} 
         deleteId={deleteId}
         deleteApi={(id) => deleteApi(id)}
-        editData={editData}
         />
       }
 
       {
         actionEdit &&
-        <EditModal actionEdit={actionEdit} setActionEdit={(action) => setActionEdit(action)} editId={editId} editApi={(id, data) => editApi(id, data)} editData={editData}/>
+        <EditModal 
+        actionEdit={actionEdit} 
+        setActionEdit={(action) => setActionEdit(action)} 
+        editId={editId} 
+        editApi={(id, data) => editApi(id, data)} 
+        editData={editData}
+        />
       }
 
     
